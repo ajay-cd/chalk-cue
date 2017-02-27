@@ -1,0 +1,48 @@
+
+<header class="nav-container container">
+	<div class="row-fluid">
+	<div class="logo verticalLine">
+		<a href="#/home"><img class="img-responsive" [src]="LOGO" style="height: 45px; margin-top: 5px;" id="company_logo" /></a>
+	</div>
+	<nav class="navbar">
+		<ul class="nav nav-tabs navigate-pages">
+
+			<li class="home">
+				<a href="#">Listings</a>
+			</li>
+
+			<li class="">
+				<a href="#">Cue Reporting</a>
+			</li>
+
+			<li class="">
+				<a href="#">Business Dashboard</a>
+			</li>
+
+			
+
+			<ul class="nav prof-navigate-pages right-nav">
+				<div class="left-nav">
+					<a href="#/user"><img class="img-responsive" id="profile-pic" style="height: 45px; width: 45px;" [src]="LOGO"/></a>
+				</div>
+
+				<div class="right-nav dropdown">
+				    <button class="dropdown-toggle" style="background-color: #fff; border: 0px;" type="button" data-toggle="dropdown">
+				    	<li class="prof-rule"><a href="#">{{agentFname}} {{agentLname}} <span class="glyphicon glyphicon-chevron-down"></span></a></li>
+				    </button>
+
+				    <ul class="dropdown-menu dropdown-menu-right dropdownNav-menu" style="margin-top:10px; overflow:auto; font-weight:200;"> 
+				      <li class="pull-left nav-li"><a> Account </a></li>
+				      <li class="pull-left nav-li"><a> Settings </a></li>
+				  	  <li class="pull-left nav-li"><a> Sign Out </a></li>
+				    </ul>
+				 </div>
+			</ul>
+			
+		</ul>
+	</nav>
+</div>
+</header>
+<div class="nav-filler"></div>
+<hr class="break">
+

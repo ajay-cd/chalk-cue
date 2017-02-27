@@ -1,0 +1,266 @@
+/*.btn-userDropdown {
+    background-color: #fff; 
+
+    text-decoration: none;
+    border-radius: 5px;
+        
+    display: inline;
+    font-size: 18px;
+    font-weight: 200;
+    border: none;
+    transition: all 0.5s;
+}*/
+
+/*
+nav.css
+Style Sheet for navigation bar
+@Chalk Digital
+Author: Sai
+*/
+
+* {
+    box-sizing: border-box;
+}
+
+
+#nav {
+    width: 100%;
+    float: left;
+    margin: 0 0 1em 0;
+    padding: 0;
+    overflow:inherit; 
+}
+
+
+
+.nav-li{
+    width: 100%;
+}
+
+.nav-filler{
+    background-color: #FAFAFA;
+}
+
+.glyphicon-chevron-down {
+    color: #28cdfb;
+    font-size: 12px;
+}
+
+
+.nav-container{
+    overflow: visible;
+    background-color: #fff;
+    width: 100%;
+    border-bottom: 1px solid #D2D2D2;
+}
+
+.break {
+    margin-top: 10px;
+    border-bottom: 1px solid #D2D2D2;
+}
+
+.setting-btn {
+    border: transparent;
+    background-color: #fff;
+    width: 100%;
+    float: left;
+    text-align: left;
+    padding-left:20px; 
+    color: inherit;
+}
+
+#company_logo{
+    height: 45px;
+    margin-top: 5px;
+}
+
+.caret-nav{
+    border-top:4px solid #28CDFB;
+}
+
+.logo{
+    float: left;
+    padding: 5px 20px;
+}
+
+#profile-pic {
+    float: left;
+    height: 45px;
+    width: 45px;
+    margin-top: 2px;
+    border: #fff;
+    border-radius: 6px;
+    margin-right: 1px;
+}
+
+.navbar{
+    float: center;
+    margin: 0 6px;
+    border: 0;
+    width: 100%;
+    padding: 0;
+}
+
+.user-info-name{
+    padding: 42px 0 38px;
+    cursor: pointer;
+    color: #717171;
+    transition: all 0.5s;
+    font-style: !underline;
+}
+
+.user-info-name:hover{
+    color: #F08519;
+    font-style: !underline;
+}
+
+.user-info-sign-out{
+    cursor: pointer;
+    color: #717171;
+    transition: all 0.5s;
+    font-style: !underline;
+}
+
+.user-info-sign-out:hover{
+    color: #F08519;
+}
+
+.settings {
+    cursor: pointer;
+    color: #717171;
+    transition: all 0.5s;
+    font-style: !underline;
+}
+
+.settings:hover{
+    color: #F08519;
+}
+
+.navigate-pages{
+    font-size: 18px;
+    font-weight: 200;
+    width: 100%;
+    padding: 0;
+}
+
+
+.navigate-pages.active{
+    /*border-bottom: 2px solid #F18621;*/
+}
+
+.navigate-pages > li.active > a{
+    border: none !important;
+    color: #717171;
+    cursor: pointer;
+    background-color: #FAFAFA;
+    padding: 40px 20px 20px 60px;
+}
+
+.navigate-pages > li.active > a:hover{
+    background-color: #FAFAFA;
+    color: #FFA000;
+    cursor: pointer;
+    font-style: !underline;
+}
+
+.navigate-pages > li > a {
+    border: none;
+    border-radius: 0;
+    padding: 20px;
+    color: #717171;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+.navigate-pages > li > a:hover {
+    background-color: #fff;
+    color: #FFA001;
+}
+
+
+.navigate-pages{
+    font-size: 18px;
+    font-weight: 200;
+    width: 100%;
+}
+
+.prof-navigate-pages > li.active > a{
+    border: none !important;
+    color: #717171;
+    cursor: pointer;
+    background-color: #fff;
+    padding: 40px 20px 20px 60px;
+}
+
+.prof-navigate-pages > li.active > a:hover{
+    background-color: #fff;
+    color: #FFA000;
+    cursor: pointer;
+    font-style: !underline;
+}
+
+.prof-navigate-pages > li > a {
+    border: none;
+    border-radius: 0;
+    padding: 40px 20px 0px 30px;
+    color: #717171;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+.prof-navigate-pages > li > a:hover {
+    background-color: #FAFAFA;
+    color: #FFA001;
+}
+
+.prof-rule {
+    /*border-bottom: 0px solid #D9D9D9;*/
+    font-style: !underline;
+    padding-top: 8px;
+}
+
+.prof-rule:hover {
+    font-style: !underline;
+}
+
+.prof-rule> a.active {
+    color: #E68327;
+    /*border-bottom: 3px solid #D9D9D9;*/
+    font-style: none;
+}
+
+.prof-rule > a:hover , a:focus{
+    text-decoration: !underline;
+}
+
+a:hover, a:focus {
+     color: #E68327; 
+     text-decoration: none; 
+}
+
+.right-nav {
+    float: right;
+    margin-top: 5px;
+}
+
+.left-nav {
+    float: left;
+    margin-top: 5px;
+}
+
+
+
+.dropdownNav-btn{
+        text-decoration: none;
+        border-radius: 5px;
+        background-color: transparent;
+        display: inline;
+        font-size: 18px;
+        font-weight: 200;
+        border: none;
+        transition: all 0.5s;
+}
+
+.nav-tabs{
+border: none;
+}
