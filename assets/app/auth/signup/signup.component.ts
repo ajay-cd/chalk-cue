@@ -6,7 +6,4 @@ import { Component } from '@angular/core';
     styleUrls: ['./signup.component.css']
 })
 
-export class Signup {
-	private LOGO = require('../signup/assets/company_logo.png');
-	// private backgroundImage = require('../signup/assets/landingBackground.jpeg');
-}
+export class SignupComponent { }

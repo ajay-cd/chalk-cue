@@ -21,7 +21,7 @@ import {ChartTypes, AllOptions, AllData} from './defs';
 //     ],
 //     bootstrap: [Dashboard]
 // })
-export class Dashboard {
+export class DashboardComponent {
 
   options;
   data;

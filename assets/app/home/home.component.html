@@ -1,7 +1,7 @@
 <div class="container-fluid">
 	<header class="row landing-page">
 		<div class="col-md-2 lp-logo">
-			<img [src]="LOGO" class="company-logo pull-left"/>
+			<img [src]="logo" class="company-logo pull-left"/>
 		</div>
 		
 		<div class="col-md-8 banner">
@@ -9,7 +9,7 @@
 		</div>
 
 		<div class="col-md-2 pull-right" id="sign-in">
-			<button type="button" class="blue-btn" >Sign In</button>
+			<button class="blue-btn" routerLink="/auth/signin" routerLinkActive="active">Signin</button>
 		</div>
 	</header>
 	
@@ -33,10 +33,9 @@
 				1. Enter Full Name or MLS Email
 			</div>
 			<div><input type="text" placeholder="Full Name or Email" id="landingPageInputBox"/></div><br>
-			<div><button type="button" id="next-btn">Next</button></div>
+			<div><button id="next-btn" routerLink="/auth/signup" routerLinkActive="active">Next</button></div>
 			<div class="pull-right"><button type="button" id="team-brokerage-btn">Team or Brokerage?</button></div>
 		</div>
 		<br><br>
 	</div>
-
 </div>
