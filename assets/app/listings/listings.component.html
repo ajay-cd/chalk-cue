@@ -1,0 +1,92 @@
+<!-- <nav-bar><nav-bar>-->
+<br> 
+<div>
+<input type="text" placeholder="Search" class="search-bar"/>
+</div>
+
+<div class="container-fluid">
+	<table class= "table table-responsive table-hover">
+		<tr>
+			<th> </th>
+			<th>Listing</th>
+			<th>Listing Lifecycle Stage</th>
+			<th>Potential Clients Reached</th>
+			<th> </th>
+		</tr>
+		<tr *ngFor="let listing of listings">
+			<td> <input type="checkbox"/></td>
+			<td> <img class="img-responsive" [src]="placeholder" class="listing-image"/></td>
+			<td> {{ listing.stage }} </td>
+			<td> {{ listing.clientsReached }} </td>
+			<td>
+				<div>
+					<div><button class="table-button table-button-promote" data-toggle="modal" data-target="#promoteModal">Promote Open House</button></div>
+					<div><button class="table-button table-button-report ">View Report</button></div>
+				</div>
+			</td>
+		</tr>
+	</table>
+</div>
+
+<!-- Confirm Modal -->
+<div id="promoteModal" class="modal fade" role="dialog">
+	<div class="modal-dialog">
+
+    	<div class="modal-content">
+
+      		<div class="modal-body">
+      			<div>
+			      	<button type="button" class="modalClose" data-dismiss="modal"> <span class="glyphicon glyphicon-remove"></span></button>
+			    </div>
+			    <br>
+      			<div class="container-fluid">
+			      	
+			        <div class="center-div">
+			        	<p class="modal-headline">Open House</p>
+			        	<p class="modal-text">Your open house will be promoted to potential buyers within a 15 mile radius of the listing for 3 days prior to the open house date set below.</p>
+			        </div>
+
+			        <div class="center-div">
+			        	<p class="modal-sub-headline">Select Date</p>
+			        	<div>
+			        		<input type="date" placeholder="Date" class="modal-promote-date-input"/>
+			        	</div>
+			        </div>
+			        <br>
+			        <div class="center-div">
+			        	<p class="modal-sub-headline">Select Time</p>
+			        	<div class="row center-div">
+			        		<div class="col-md-5">
+				        		<div class="dropdown">
+									<button class="dropdown-toggle" type="button" data-toggle="dropdown" id="dropdown-btn">Time  <span class="glyphicon glyphicon-chevron-down"></span></button>
+									<ul class="dropdown-menu" >
+										<li *ngFor="let time of timings">{{time.timing}}</li>
+									</ul>
+								</div>
+							</div>
+							<div class="col-md-2">
+								<div class="modal-sub-headline">to</div>
+							</div>
+							<div class="col-md-5">
+				        		<div class="dropdown">
+									<button class="dropdown-toggle" type="button" data-toggle="dropdown" id="dropdown-btn">Time  <span class="glyphicon glyphicon-chevron-down"></span></button>
+									<ul class="dropdown-menu" >
+										<li *ngFor="let time of timings">{{time.timing}}</li>
+									</ul>
+								</div>
+							</div>
+
+			        	</div>
+			 
+			        </div>
+			        <br><br>
+			        <div class="center-div">
+			        	<button class="table-button modal-button-promote" data-toggle="modal" data-target="#promoteModal"><span class="modal-heading">Promote Open House</span></button>
+			        </div>
+		        </div>
+      		</div>
+
+    	</div>
+
+  	</div>
+</div>

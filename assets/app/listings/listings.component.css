@@ -1,0 +1,122 @@
+.search-bar {
+	padding: 5px 40px;
+	margin: 5px 10px;
+	border-radius: 4px;
+	border: 1px solid #E0E0E0;
+	/*float: left;*/
+}
+.listing-image {
+	height: 70px; 
+	width: 90px;
+}
+
+.table-button {
+	width: 80%;
+	float: center;
+	margin: 5px;
+	padding: 8px;
+	color: #ffffff;
+	border-radius: 4px;
+	border: 0px solid #fff;
+}
+
+.table-button-promote {
+	background-color: #FEC418;
+}
+
+.table-button-report {
+	background-color: #28CDFB;
+}
+
+.center-div{
+	margin:0 auto;
+}
+
+#dropdown-btn{
+        text-decoration: none;
+        border-radius: 5px;
+        background-color: #fff;
+        color: #666666;
+        border: none;
+        font-size: 16px;
+        font-weight: 200;
+        transition: all 0.5s;
+}
+.dropdown-menu {
+    overflow: scroll;
+    height: 100px; 
+    margin-top:0px;
+}
+.dropdown-menu > li{
+    text-align: center;
+    color: #666666;
+    font-weight: 600;
+}
+.dropdown-menu > li:hover {
+    background-color: #DBDBDB;
+}
+
+.modal-button-promote {
+	background-color: #FEC418;
+	width: 100%;
+	margin: 0px;
+	font-weight: 600;
+	font-size: 20px;
+}
+
+.modal-promote-date-input {
+	padding: 5px 40px;
+	/*margin: 10px 0px;*/
+	border-radius: 4px;
+	border: 1px solid #E0E0E0;
+	width: 100%;
+	text-align: center;
+}
+
+.dropdown-modal-right {
+	float: right;
+}
+
+.modal-headline {
+	font-weight: 600;
+	font-size: 24px;
+	color: #666666;
+	text-align: center;
+}
+
+.modal-sub-headline {
+	font-weight: 200;
+	font-size: 20px;
+	color: #666666;
+	text-align: center;
+}
+
+.modal-text {
+	font-weight: 200;
+	font-size: inherit;
+	color: #666666;
+	text-align: center;
+}
+
+.modalClose {
+	background-color: #fff; 
+	color: #28CDFB;
+	border: none;
+	float: right;
+}
+
+.modal-body{
+    height: auto;
+    overflow: scroll;
+    padding: 20px 35px;
+    overflow-y: auto;
+}
+
+.modal-dialog{
+    width: 350px;
+    overflow-y: scroll;
+}
+
+.glyphicon-chevron-down{
+	color: #28CDFB;
+}
