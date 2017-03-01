@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "start": "nodemon ./bin/www",
+    "start": "nodemon server.js",
     "build": "del-cli public/js/app && webpack --config webpack.config.dev.js --progress --profile --watch",
     "build:prod": "del-cli public/js/app && ngc -p tsconfig.aot.json && ngc -p tsconfig.aot.json && webpack --config webpack.config.prod.js --progress --profile --bail && del-cli 'public/js/app/**/*.js' 'public/js/app/**/*.js.map' '!public/js/app/bundle.js' '!public/js/app/*.chunk.js' 'assets/app/**/*.ngfactory.ts' 'assets/app/**/*.shim.ts'"
   },
@@ -35,6 +35,7 @@
     "ng2-pagination": "^0.3.0",
     "nodemon": "^1.11.0",
     "nvd3": "^1.8.5",
+    "request": "^2.79.0",
     "rxjs": "^5.2.0",
     "serve-favicon": "~2.3.0",
     "zone.js": "^0.6.25"
