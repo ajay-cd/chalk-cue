@@ -1,4 +1,4 @@
-<!-- <nav-bar><nav-bar>-->
+
 <br> 
 <div>
 <input type="text" placeholder="Search" class="search-bar"/>
@@ -21,16 +21,20 @@
 			<td>
 				<div>
 					<div><button class="table-button table-button-promote" data-toggle="modal" data-target="#promoteModal">Promote Open House</button></div>
-					<div><button class="table-button table-button-report ">View Report</button></div>
+					<div><button class="table-button table-button-report" data-toggle="modal" data-target="#viewReportModal">View Report</button></div>
 				</div>
 			</td>
 		</tr>
 	</table>
 </div>
 
-<!-- Confirm Modal -->
+
+
+
+
+<!-- Promote Open House Modal -->
 <div id="promoteModal" class="modal fade" role="dialog">
-	<div class="modal-dialog">
+	<div class="modal-dialog modal-dialog-promote">
 
     	<div class="modal-content">
 
@@ -90,3 +94,118 @@
 
   	</div>
 </div>
+<!-- Promote Open House Modal End -->
+
+
+
+
+<!-- View Report Modal -->
+<div id="viewReportModal" class="modal fade" role="dialog">
+	<div class="modal-dialog modal-dialog-viewReport">
+
+    	<div class="modal-content">
+
+      		<div class="modal-body">
+      			<div class="container-fluid">
+			      	<div class="row">
+			      		<div class="col-md-2">
+			      			<button class="modal-button-vR modal-button-vR-print" data-toggle="modal" data-target="#promoteModal"><span class="modal-heading">Print</span></button>
+			      		</div>
+			      		<div class="col-md-2">
+			      			
+			      		</div>
+			      		<div class="col-md-4">
+			      			<button class="modal-button-vR" data-toggle="modal" data-target="#promoteModal"><span class="modal-heading">Set Seller Email</span></button>
+			      		</div>
+			      		<div class="col-md-2">
+			      			
+			      		</div>
+			      		<div class="col-md-2">
+			      			<button class="modal-button-vR modal-button-vR-close" data-toggle="modal" data-target="#promoteModal"><span class="modal-heading">Close</span></button>
+			      		</div>
+			      	</div>
+			      	<br>
+			      	<div class="row container-fluid modal-container-vR">
+			      		<div class="col-md-4">
+			      			<img class="img-responsive" [src]="placeholder" class="modal-logo-vR"/>
+			      		</div>
+			      		<div class="col-md-8">
+			      			<div class="col-md-4">
+			      				<div class="modal-headline">Marketing Report</div>
+			      				<div class="modal-sub-headline"> 2384 New Broad Way San Diego, CA 921010</div>
+			      			</div>
+			      			<div class="col-md-4 modal-vR-right">
+			      				<div><img class="img-responsive" [src]="placeholder" class="listing-image"/></div>
+			      				<div class="modal-sub-headline">Jennifer Doe</div>
+			      			</div>
+			      		</div>
+			      	</div>
+			      	<br><br>
+			      	<div class="row container-fluid">
+			      		<div class="col-md-2 modal-vR-smallGraph">
+			      			<graph></graph>
+			      		</div>
+			      		<div class="col-md-2">
+			      			
+			      		</div>
+			      		<div class="col-md-2 modal-vR-smallGraph">
+			      			<graph></graph>
+			      		</div>
+			      		<div class="col-md-2">
+			      			
+			      		</div>
+			      		<div class="col-md-2 modal-vR-smallGraph">
+			      			<graph></graph>
+			      		</div>
+			      	</div>
+			      	<br><br><br><br>
+			      	<div class="row container-fluid">
+			      		<div class="col-md-6">
+			      			<graph></graph>
+			      		</div>
+			      		<div class="col-md-6 leftDivider">
+			      			<graph></graph>
+			      		</div>
+			      	</div>
+			       
+		        </div>
+      		</div>
+
+    	</div>
+
+  	</div>
+</div>
+<!-- View Report Modal End-->
+
+
+<!-- Set Sellers Email Modal -->
+<div id="promoteModal" class="modal fade" role="dialog">
+	<div class="modal-dialog modal-dialog-promote">
+
+    	<div class="modal-content">
+
+      		<div class="modal-body">
+      			<div>
+			      	<button type="button" class="modalClose" data-dismiss="modal"> <span class="glyphicon glyphicon-remove"></span></button>
+			    </div>
+			    <br>
+      			<div class="container-fluid">
+			      	<div class="center-div">
+			        	<p class="modal-headline">Seller(s) Email</p><br>
+			        	<p class="modal-text">Your Seller(s) will recieve a copy of this report at the interval you set below.</p><br>
+			        	<p class="modal-text">You will always recieve a report on a weekly basis regardless.</p><br>
+			        </div>
+			        <div>
+			        	<input type="email" placeholder="Seller 1 Email" class="modal-promote-date-input"/>
+			        </div>
+			        <div>
+			        	<input type="email" placeholder="Seller 2 Email (optional)" class="modal-promote-date-input"/>
+			        </div>
+			    </div>
+      		</div>
+
+    	</div>
+
+  	</div>
+</div>
+<!-- Set Sellers Email Modal End-->

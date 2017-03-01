@@ -1,8 +1,4 @@
 import { Component, ViewChild, ViewEncapsulation } 	from '@angular/core';
-// import { ModalComponent }        from 'ng2-bs3-modal/ng2-bs3-modal';
-
-// import {MdDialog, MdDialogRef} from '@angular/material';
-// import {DialogResultExampleDialog} from './promote.listings.component';
 
 @Component({
     selector: 'listings',
@@ -11,17 +7,7 @@ import { Component, ViewChild, ViewEncapsulation } 	from '@angular/core';
 })
 
 export class ListingsComponent {
-	// @ViewChild('myModal')
- //    modal: ModalComponent;
 
- //    close() {
- //        this.modal.close();
- //    }
-
- //    open() {
- //        this.modal.open();
- //    }
-	
 	private placeholder = require('./assets/company_logo.png');
 
 	public timings: any[] = [

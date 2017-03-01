@@ -12,6 +12,7 @@ import { AuthenticationComponent }          from "./auth/authentication.componen
 import { AuthService }                      from "./auth/auth.service";
 import { NavigationComponent } 	            from './navigation/navigation.component';
 import { DashboardComponent } 	            from './dashboard/dashboard.component';
+import { GraphComponent }                   from './listings/graphs/graphs.component'
 import { ListingsComponent }                from './listings/listings.component';
 import { nvD3 } 				            from 'ng2-nvd3/lib/ng2-nvd3';
 
@@ -24,6 +25,7 @@ import { nvD3 } 				            from 'ng2-nvd3/lib/ng2-nvd3';
     	SignupComponent,
         NavigationComponent,
     	DashboardComponent,
+        GraphComponent,
     	ListingsComponent,
         nvD3
     ],
